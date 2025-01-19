@@ -1,0 +1,298 @@
+
+.market__valuation {
+  width: 100%;
+  height: 100%;
+  padding: 4rem 0;
+}
+
+ .valuationlist {
+  background: #fff;
+  width: 100%;
+  padding-top: 30px;
+}
+
+ .valuationlist .title__header {
+  display: flex;
+}
+
+ .valuationlist .title__header .title {
+  text-transform: capitalize;
+  font-size: 22px;
+  color: #4F4F4F;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+ .valuationlist .title__header .view__all {
+  color: #4F4F4F;
+}
+
+ .valuationlist .title__header .view__all:hover {
+  color: #4475F2;
+}
+
+ .valuationlist .title__header .view__all:hover span {
+  transform: translateX(5px);
+}
+
+ .valuationlist .title__header .view__all:hover span i {
+  transform: translateX(5px);
+}
+
+ .valuationlist .title__header .view__all span {
+  display: flex;
+  align-items: center;
+  grid-gap: 0.5rem;
+  text-transform: capitalize;
+  letter-spacing: .5px;
+  font-size: 14px;
+  transition: all 300ms ease-in-out;
+}
+
+ .valuationlist .title__header .view__all span i {
+  display: flex;
+  font-size: 12px;
+  transition: all 300ms ease-in-out;
+}
+
+ .valuation-table {
+  overflow-x: auto;
+  border: 1px solid #E0E0E0;
+  padding: 2rem 1rem;
+}
+
+ .valuation-table table {
+  width: 100%;
+  height: 100%;
+  border-spacing: 5px;
+  border-collapse: separate;
+}
+.valuation-table table td {
+  background: #FBFBFB;
+  border: 2px solid #E0E0E0;
+  padding: .6rem .5rem;
+  margin: 2rem;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 500;
+  color: #4F4F4F;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  white-space: nowrap;
+  width: 88px;
+  height: 20px;
+}
+ .valuation-table table td:first-child {
+  border: 0;
+  background: transparent;
+}
+
+ .valuation-table table td .short-code {
+  display: none;
+}
+
+ .valuation-table table thead tr td {
+  border: 0;
+  background: #F2F2F2;
+  color: #828282;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.valuation-table .valuation__information {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(185px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
+  grid-column-gap: 80px;
+}
+
+.valuation-table .mb-15 {
+  margin-bottom: 15px;
+}
+.valuation-table .heigly-undervalue {
+  /* 
+            grid-column: 1/2;
+            grid-row: 1/2; */
+}
+
+.valuation-table .heigly-undervalue .color-darkgreen {
+  background-color: #009900;
+}
+
+.valuation-table .undervalue {
+  /* grid-column: 2/3;
+            grid-row: 1/2; */
+}
+
+.valuation-table .undervalue .color-lightgreen {
+  background-color: #4DBE4D;
+}
+
+.valuation-table .fairlyvalued {
+  /* grid-column: 3/4;
+            grid-row: 1/2; */
+}
+
+ .valuation-table .fairlyvalued .color-yellow {
+  background-color: #E09F20;
+}
+
+.valuation-table .overvalued {
+  /* grid-column: 1/2;
+            grid-row: 2/3; */
+}
+
+ .valuation-table .overvalued .color-lightred {
+  background-color: #DF4646;
+}
+
+.valuation-table .heighlyovervalued {
+  /* grid-column: 2/3;
+            grid-row: 2/3; */
+}
+
+.valuation-table .heighlyovervalued .color-darkred {
+  background-color: #CB0505;
+}
+
+.valuation-table .small-box {
+  padding: 1px 10px;
+  margin-right: 8px;
+}
+
+.highly-undervalued {
+	cursor: pointer;
+}
+.under-valued {
+    cursor: pointer;
+}
+.fairly-valued {
+    cursor: pointer;
+}
+.over-valued {
+    cursor: pointer;
+}
+.highly-overvalued {
+    cursor: pointer;
+}
+
+ .gainer_looser {
+  grid-gap: 2rem;
+}
+
+ .gainer_looser-header {
+  
+  grid-gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ .gainer_looser-header .title {
+  margin: 0;
+  text-transform: capitalize;
+  font-size: 22px;
+  color: #4F4F4F;
+  font-weight: 500;
+}
+
+ .gainer_looser-header .view__all {
+  color: #4F4F4F;
+}
+
+ .gainer_looser-header .view__all:hover {
+  color: #4475F2;
+}
+
+ .gainer_looser-header .view__all:hover span {
+  transform: translateX(5px);
+}
+
+ .gainer_looser-header .view__all:hover span i {
+  transform: translateX(5px);
+}
+
+ .gainer_looser-header .view__all span {
+ 
+  align-items: center;
+  grid-gap: 0.5rem;
+  text-transform: capitalize;
+  letter-spacing: .5px;
+  font-size: 14px;
+  transition: all 300ms ease-in-out;
+}
+
+ .gainer_looser-header .view__all span i {
+  display: flex;
+  font-size: 12px;
+  transition: all 300ms ease-in-out;
+}
+.gainer_looser-tablist{
+	margin-bottom: 30px;
+}
+ .gainer_looser-tablist .nav-tabs {
+  border: 0;
+  grid-gap: 1rem;
+}
+
+ .gainer_looser-tablist .nav-tabs .nav-item .nav-link {
+  letter-spacing: .5px;
+  color: #828282;
+  text-transform: capitalize;
+  padding: .5rem 1.5rem;
+  border: 1px solid #4475F2;
+  border-radius: 50px;
+  font-size: 14px;
+  transition: all 300ms ease-in-out;
+}
+
+ .gainer_looser-tablist .nav-tabs .nav-item .nav-link.active {
+  background: #4475F2;
+  color: #F6F8FE;
+}
+
+ .gainer_looser-content {
+  width: 100%;
+}
+
+ .gainer_looser-content .tab-pane {
+  width: 100%;
+  overflow-x: auto;
+}
+
+ .gainer_looser-content .tab-pane table {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #E0E0E0;
+}
+
+ .gainer_looser-content .tab-pane table td {
+  border-bottom: 1px solid #E0E0E0;
+  padding: .7rem .5rem;
+  font-size: 14px;
+}
+
+ .gainer_looser-content .tab-pane table tbody tr td {
+  text-transform: capitalize;
+  color: #4F4F4F;
+  font-size: 14px;
+  letter-spacing: .5px;
+}
+
+ .gainer_looser-content .tab-pane table tbody tr td:first-child {
+  text-transform: uppercase;
+}
+
+ .gainer_looser-content .tab-pane table thead tr td {
+  padding: 1rem .5rem;
+  color: #828282;
+  text-transform: capitalize;
+  letter-spacing: .5px;
+  font-size: 14px;
+}
+ .gainer_looser-content .tab-pane table tr th {
+    padding: 16px 10px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    text-align: left;
+}

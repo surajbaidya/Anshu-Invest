@@ -1,0 +1,103 @@
+/* common css of financical tab of company profile start*/
+.title {
+    text-transform: capitalize;
+    font-size: 26px;
+    font-weight: 500;
+    color: #4F4F4F;
+}
+
+.m-50{
+margin-bottom: 50px;
+}
+/* common css of financical tab of company profile end*/
+
+/* finance tab section first table of company profile CSS start */
+.finance__grid{
+    background-color: #fff;
+    padding: 35px 40px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:80px;
+    h3{
+        font-size: 18px;
+        font-weight: 500;
+        color: #333;
+        font-family: 'Rubik', sans-serif;
+        padding: 10px 0 15px;
+        
+    }
+    .finance__table{
+        table-layout: fixed;
+        /* width: 100%; */
+       
+        td{
+            padding: 5px 10px;
+            // white-space: pre-wrap;
+            vertical-align: baseline;
+            font-size: 16px;
+            color: #828282;
+            &:first-child{
+                padding-left: 0;
+            }
+            &:last-child{
+                padding-right: 0;
+            }
+            strong{
+                color: #828282;
+                font-weight: 500;
+            }
+        }
+        .price__income{
+            white-space: nowrap;
+        }
+    }
+}
+/* finance tab section first table of company profile CSS end */
+
+/* finance tab section balance sheet, income statement, cashflow statement of company profile CSS start */
+.company__overview-wrapper-content {
+	.tab-pane {
+		.income__statement-wrapper-content,.cashflow__statement-wrapper-content,.balance__sheet-wrapper-content {
+			.tab-pane {
+				.sheet__wrapper-table {
+					table {
+						tbody {
+							tr {
+								td {
+									 background-color: #fff;
+								}
+                                &:nth-child(n + 6) {
+                                    visibility: hidden;
+                                    display:none;
+                                }
+							}
+						}
+					}
+				}
+			}
+		}
+
+
+	}
+}
+/* finance tab section balance sheet, income statement, cashflow statement of company profile CSS end */
+
+/* Media query of FInancial tab section of company profile start*/
+@media only screen and (max-width: 1024px){
+    .finance__grid{
+        display: block;
+    }
+    .m-50{
+        margin-bottom: 0;
+    }
+    .finance__table-wrap{
+        overflow-x: auto;
+        .finance__table{
+            margin-bottom: 10px;
+            table-layout: auto;
+        }
+    }
+   
+}
+/* Media query of FInancial tab section of company profile end*/

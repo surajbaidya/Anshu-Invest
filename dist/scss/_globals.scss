@@ -1,0 +1,199 @@
+// text colors
+$text-color: #4F4F4F;
+$light-text: #828282;
+
+// background colors
+$badge-bg: #FE5E5E;
+$red-color: #CB0505;
+$green-color: #009900;
+$purple-color: #4475F2;
+$secondary-blue: #5E8BFE;
+$light-blue: #F6F8FE;
+$light-purple: #F8FAFF;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+a:hover,a:focus{
+    text-decoration: none;
+}
+
+body{
+    &.active{
+        overflow-y: hidden;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+label{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    margin: 0;
+    list-style: none;
+}
+
+.wrapper{
+    width: 85%;
+    height: 100%;
+    margin: auto;
+    transition: all 300ms ease-in-out;
+
+    @media (max-width: 1536px){
+        width: 95%;
+    }
+}
+
+.raise{
+    color: $green-color !important;
+}
+
+.down{
+    color: $red-color !important;
+}
+
+.btn__raise{
+    background: $green-color !important;
+}
+
+.btn__down{
+    background: $red-color !important;
+}
+
+.highly-undervalued{
+    background: $green-color !important;
+    border-color: $green-color !important;
+}
+
+.under-valued{
+    background: #29CE29 !important;
+    border-color: #29CE29 !important;
+}
+
+.fairly-valued{
+    background: #8C8C8C !important;
+    border-color: #8C8C8C !important;
+}
+
+.over-valued{
+    background: #CB0505 !important;
+    border-color: #CB0505 !important;
+}
+
+.highly-overvalued{
+    background: #CA6363
+    !important;
+    border-color: #CA6363
+    !important;
+}
+
+// global pagination
+.news__pagination{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+
+    &-menu{
+        display: flex;
+        align-items: center;
+
+        .page{
+            .page-link{
+                border: 0;
+                padding: 0;
+                color: $text-color;
+                background: transparent;
+                font-weight: 400;
+                font-size: 16px;
+                min-width: 2rem;
+                height: 2rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: all 300ms ease-in-out;
+
+                &:hover{
+                    background: transparent;
+                    color: $purple-color;
+                }
+
+                &.active{
+                    color: $purple-color;
+                    font-weight: 500;
+                }
+
+                i{
+                    display: flex;
+                }
+            }
+        }
+    }
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+p::selection,
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+img::selection,
+a::selection,
+span::selection,
+label::selection,
+li::selection,
+input::selection,
+td::selection,
+h5::selection{
+    background: $red-color;
+    color: #fff;
+}
+
+.menu__overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 30px 60px -15px rgba(143, 144, 188, .15);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    z-index: 55555;
+    animation: menuOverlay .5s ease-in-out;
+
+    @keyframes menuOverlay {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+}
+
+table td{
+    white-space: nowrap;
+}

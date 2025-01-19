@@ -1,0 +1,86 @@
+.company__overview-wrapper.mutual__profile.debenture__profile{
+   .overview__grid {
+      .overview__grid-graph {
+         grid-template-columns: repeat(2, 1fr);
+         grid-gap: 45px;
+         .section__screme {
+            padding-top: 0;
+            .screme__detail {
+               display: block;
+               .screme__fund{
+                  padding: 40px 40px 50px 40px;
+               }
+               .fund-rating__table{
+                  tr{
+                     td{
+                        padding: 10px 15px;
+                        font-size: 14px;
+                        &:last-child{
+                           font-size: 16px;
+                        }
+                     }
+                  }
+               }
+               
+            }
+         }
+      }
+   }
+   .section__screme{
+      padding: 0;
+      .screme__detail{
+         .screme__expense {
+            .table__manager{
+               table{
+                  tr{
+                     th{
+                        text-align: left;
+                     }
+                  }
+               }
+               width: 100%;
+               .alian__name{
+                  text-align: left;
+               }
+            }
+         }
+      }
+   }
+   
+}
+
+.form__text.form__text-wrap.ytm__text-wrap{
+   padding: 51px 50px 50px 60px;
+   background-color: #fff;
+   .form__details.detail-select{
+      margin-bottom: 22px;
+      .form-input-wrap{
+         padding: 10px 0 10px 15px;
+         width: 100%;
+         border-radius: 50px;
+         outline: none;
+         border: 1px solid #828282;
+      }
+   }
+   .profile__button{
+      text-align: left;
+      @media(max-width:479px){
+         text-align: center;
+
+      }
+      .calculate__btn{
+         background-color: #4475F2;
+         color: #fff;
+      }
+      .clear__btn{
+         background-color: #fff;
+         border: 1px solid #4475F2;
+         transition: 0.5s all ease-in-out;
+         &:hover{
+            background-color: #4475F2;
+            border: 1px solid #4475F2 ;
+            color: #fff;
+         }
+      }
+   }
+} 

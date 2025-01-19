@@ -1,0 +1,221 @@
+
+.tool__wrap{
+    padding-top: 65px;
+    background-color: #F8FAFF;
+    .main__tool{
+       
+        h2{
+            text-transform: capitalize; 
+            font-size: 24px;
+            font-weight: 500;
+            font-family: 'Rubik', sans-serif;
+            color: #4F4F4F;
+        }
+        .calculator__wrap{
+            margin: 10px 0 0 0;
+            ul{
+                border: none;
+                li{
+                    display: inline-block;
+                    a{
+                        font-size: 16px;
+                        font-weight: 400; 
+                        font-family: 'Rubik', sans-serif;
+                        color: #828282;
+                        padding: 5px 20px;
+                        border: 1px solid #5E8BFE;
+                        border-radius: 50px;
+                        margin: 0 10px 15px 0;
+                        &:hover{
+                            background-color: #5E8BFE;
+                            color: #fff;
+                        }
+                        &.active{
+                            background-color: #5E8BFE;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+        .stock-screener__section.main__calculator {
+            padding: 20px 0 45px 0;
+            .stock-screener__wrap {
+                background-color: #fff;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-areas: 'sharecalc price';
+                grid-gap: 20px;
+                padding:20px 40px;
+                @media(max-width:479px){
+                    padding: 20px;
+                }
+                .p-30{
+                    padding: 30px 0;
+                }
+                .share-calc-form{
+                    grid-area: sharecalc;
+                   grid-column: 1/3;
+                   grid-gap: 30px;
+                   padding: 0 20px;
+                   .first__row{
+                       display: flex;
+                       .input__Wrap{
+                        flex-basis: 50%;
+                        grid-gap: 30px;
+                        &:first-child{
+                            padding-right: 30px;
+                        }
+                       }
+                   }
+                   .input__Wrap{
+                    width: calc(50% - 30px);
+                   }
+                }
+                .calculate__cta{
+                    display: flex;
+                    align-items: center;
+                    grid-gap: 1rem;
+                    a{
+                        min-width: 200px;
+                        border: 1px solid #4475F2;
+                        height: 49px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 50px;
+                        transition: all 300ms ease-in-out;
+                        &:hover{
+                            background-color: #5E8BFE;
+                            span{
+                                animation: btnTransform .5s ease-in-out;
+                                color: #fff;
+                            }
+                        }
+                        &.btn__subscribe{
+                            min-width: 150px;
+                        }
+                        &.btn__login{
+                            background-color:#4475F2;
+                            span{
+                                color: #fff;
+                            }
+                        }
+                        span{
+                            text-transform: capitalize;
+                            font-size: 16px;
+                            color:#828282;
+                            letter-spacing: 1px;
+                            transition: all 300ms ease-in-out;
+                        }
+                    }
+                }
+                .price.sebon{
+                    border-left: 1px solid #E0E0E0;
+                    grid-column:3/4;
+                    padding-left: 32px;
+                    table{
+                        tbody{
+                            tr{
+                                border: 1px solid #F2F2F2;
+                                &:nth-child(odd){
+                                    background-color: #F8FAFF;
+                                }
+                                td{
+                                    width: 100%;
+                                    padding: 16px 109px 16px 41px;
+                                    color: #4F4F4F;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/* media query */
+@media screen and (max-width: 1199px){
+    .tool__wrap {
+        .main__tool {
+            .stock-screener__section.main__calculator {
+                .stock-screener__wrap {
+                    display: block;
+                    .calculate__cta{
+                        justify-content: center;
+                        margin-top: 20px;
+                    }
+                    .price.sebon{
+                        overflow-x: auto;
+                        border: none;
+                        padding-left: 0;
+                    }
+                }
+            }
+        }
+    }
+    
+    
+}
+
+@media screen and (max-width: 767px){
+    .tool__wrap {
+        .main__tool {
+            .stock-screener__section.main__calculator {
+                .stock-screener__wrap {
+                    .share-calc-form {
+                        padding: 0;
+                        .first__row {
+                            display: block;
+                            .input__Wrap{
+                                &:first-child{
+                                    padding: 0;
+                                }
+                            }
+                        }
+                        .input__Wrap{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+@media screen and (max-width: 575px){
+    .tool__wrap {
+        .main__tool {
+            .stock-screener__section.main__calculator {
+                .stock-screener__wrap {
+                    .calculate__cta {
+                        a {
+                           min-width: 150px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+@media screen and (max-width: 479px){
+    .tool__wrap {
+        .main__tool {
+            .stock-screener__section.main__calculator {
+                .stock-screener__wrap {
+                    .calculate__cta {
+                        display: block;
+                        a {
+                           margin-bottom: 20px;
+                        }
+                    }
+                    .price.sebon{
+                       padding: 0;
+                    }
+                }
+            }
+        }
+    }
+    
+}

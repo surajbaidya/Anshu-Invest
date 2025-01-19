@@ -1,0 +1,88 @@
+/* All CSS for fixing on Frontend */
+
+.ng-select-container{
+    position: relative;
+    width: 250px;
+    border: 1px solid #4475F2;
+    border-radius: 50px;
+    color: #828282;
+    font-size: 14px;
+}
+.ng-dropdown-panel{
+    opacity: 1;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+    z-index: 1;
+    transition: 0.2s ease;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+}
+.portfolio__name{
+    input{
+        padding: 7px 15px;
+        margin-right: 10px;
+        border-radius: 50px;
+        outline: none;
+        border: 1px solid #828282;
+    }
+  
+}
+.mutual-fund-portfolio__chart {
+	.mutual__chart-box {
+		border: 1px solid #e0e0e0;
+        background-color: #f8faff;
+		.mutual__chart-number {
+			border: none;
+            background-color: transparent;
+		}
+		.mutual__view {
+			border-left: 1px solid #e0e0e0;
+		}
+	}
+}
+.chart__boarder {
+	.mutual__chart-box {
+		.mutual__chart-number {
+			grid-gap: 30px;
+		}
+	}
+}
+
+
+.ng-select.ng-select-single .ng-select-container{
+    grid-gap: 10px;
+}
+
+
+.company__overview-wrapper-content {
+	.tab-pane {
+		.balance__sheet-wrapper-content,.income__statement-wrapper-content {
+			.tab-pane {
+				.sheet__wrapper-chart {
+					.mt-4{
+                        margin-top: 0!important;
+                    }
+				}
+			}
+		}
+	}
+}
+
+.company__overview-wrapper-content {
+    .tab-pane {
+        .company__profile-details{
+            .company__profile-wrapper {
+                grid-template-columns: repeat(5, 1fr);
+                &-content{
+                    grid-column: span 2;
+                }
+                &-details{
+                    grid-column: span 2;
+                }
+                &-contact{
+                    grid-column: span 2;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.mutual-fund-portfolio__chart {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.mutual-fund-portfolio__chart .chart__asset {
+  grid-column: span 1;
+}
+
+.mutual-fund-portfolio__chart .chart__sector {
+  grid-column: span 2;
+}

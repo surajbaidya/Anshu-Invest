@@ -1,0 +1,938 @@
+/* Todays alert in menu CSS starts here */
+.main__header-bottom-nav-menu{
+    .menu-item{
+        .megamenu{
+            min-width: 398px;
+            z-index: 99;
+            top: 169%!important;
+            padding-bottom: 30px ;
+            @media(max-width:475px){
+                min-width: 250px;
+            }
+            li{
+                .alert-link{
+                    display: flex;
+                    align-items: center;
+                    grid-gap: 15px;
+                    @media(max-width:475px){
+                        display: block;
+                        text-align: center;
+                        background-color: #fff;
+                        margin-bottom: 25px;
+                    }
+                    &:hover{
+                        background-color: transparent;
+                        .alert-details{
+                            .read__more{
+                                color: #4475F2;
+                                span{
+                                    text-align: center;
+                                }
+                            }
+                        }
+                    }
+                    .alert-img{
+                        img{
+                            width: 80px;
+                        }
+                    }
+                    .alert-details{
+                        h3{
+                            font-size: 16px;
+                            color: #4F4F4F;
+                            line-height: 25px;
+                        }
+                        .read__more{
+                            margin-top: 6px;
+                            color: #828282;
+                            @media(max-width:475px){
+                                display: grid;
+                                justify-content: center;
+                            }
+                            span{
+                                font-weight: 400;
+                                display: flex;
+                                i{
+                                    margin: 3px 0 0 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .dropdown__header{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: .7rem 1rem;
+                a{
+                    i{
+                        font-size: 32px;
+                        color: #4F4F4F;
+                    }
+                }
+                .dropdown__title{
+                    h2{
+                        font-size: 20px; 
+                        color: #4F4F4F;
+                        font-family: 'Rubik', sans-serif;
+                        font-weight: 500;
+                    }
+                }
+            }
+            &.show{
+                margin-top: 10px;
+                @media(max-width: 475px){
+                    padding-bottom: 0;
+                }
+            }
+        }  
+    }
+} 
+/* Todays alert in menu CSS starts here */
+
+/* Market valuation table design starts on homepage*/
+.market__valuation-wrapper {
+    .stock__market-content {
+        border:1px solid #E0E0E0;
+        .tab-pane {
+            table {
+                border:none;
+                td {
+                    border-bottom: 1px solid #E0E0E0;
+                    padding: 0.95rem  0.5rem;
+                    font-size: 14px;
+                    text-transform: capitalize;
+                    color: #4f4f4f;
+                }
+            }
+        }
+    }
+    .valuation-table{
+        overflow-x: auto;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        grid-gap: 20px;
+        table{
+            td{
+                padding: 3px 36px;
+                &:first-child{
+                    padding-left: 0;
+                    padding-right: 25px;
+                }
+            }
+        }
+        .valuation__information{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            grid-column-gap: 70px;
+            grid-row-gap: 5px;
+        }
+        .mb-15{
+            margin-top: 6px;
+        }
+        span{
+            font-size: 12px;
+            white-space: nowrap;
+            font-weight: 400;
+        }
+        .heigly-undervalue{
+            .color-darkgreen{
+                background-color: #009900;
+            }
+        }
+        .undervalue{
+            .color-lightgreen{
+                background-color: #4DBE4D;
+            }
+        }
+        
+        .fairlyvalued{
+            .color-yellow{
+                background-color: #8C8C8C
+                
+                ;
+            }
+            
+        }
+        .overvalued{
+            .color-lightred{
+                background-color: #CA6363;
+            }
+        }
+        .heighlyovervalued{
+            .color-darkred{
+                background-color: #CB0505;
+            }
+        }
+        .small-box{
+            padding: 0 8px;
+            margin-right: 8px;
+        }
+    }
+}
+.ph-plus-bold{
+    font-size: 10px;
+}
+/* Market valuation table design ends on homepage*/
+
+/* News view detail page image width change CSS starts */
+.news__view-wrapper-content-wrapper {
+    display: block;
+    img {
+        width: 450px;
+        height: auto;
+        float:left;
+        padding: 10px 16px 0 0;
+    }
+}
+/* News view detail page image width change CSS ends */
+
+/* Add overlay on bg when alert menu opens start */
+.main__content.overlay{
+    position: relative;
+    &:before{
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(3px);
+        background: rgba(130, 130, 130, 0.12);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);;
+        z-index: 66;
+    }
+}
+/* Add overlay on bg when alert menu opens start 
+body.overflow{
+    overflow: hidden;
+}
+/* CSS of view more button below table starts */
+.gainer-and-turnover{
+    
+    .view__more{
+        float: right;
+        margin: 10px 10px 0 0;
+        a{
+            &:hover{
+                span{
+                    transform: translatex(5px);
+                    color: #4475F2;
+                    i{
+                        transform: translatex(5px);
+                    }
+                }
+            }
+            
+            span{
+                color: #828282; 
+                display: flex;
+                align-items: center;
+                grid-gap: 0.3rem;
+                text-transform: capitalize;
+                letter-spacing: .5px;
+                font-size: 14px;
+                transition: all 300ms ease-in-out;
+                
+            }
+        }
+    }
+}
+.company__overview-wrapper-content {
+	.tab-pane {
+		.overview__grid-graph-data {
+			.data-content {
+				.tab-pane {
+					.content-wrapper {
+                        &.p__right{
+                            padding-right: 0;
+                            display: block;
+                        }
+						.m_down{
+                            margin-bottom: 35px;
+                        }
+					}
+				}
+			}
+		}
+	}
+}
+
+/* CSS of view more button below table ends *
+/* Add bg white tonews section and investor section of homepage start */
+.news__investor-wrapper {
+    .news__section ,
+    .investor__section{
+        background-color: #fff;
+        padding: 30px;
+    }
+}
+/* Add bg white tonews section and investor section of homepage end */
+/* Search button dropdown CSS start*/
+.search-input{
+    position: relative;
+    .inner-search-wrap{
+        width: 100%;
+        left: 0;
+        border-radius: 3px;
+        top: calc(100% + 2px);
+        box-shadow: 5px 6px 10px rgba(0,0,0,0.3);
+        border: 1px solid #ccc;
+        font-size: 14px;
+    }
+}
+/* Search button dropdown CSS ends*/
+/* stock analysis of company profile start */
+.blur__section{
+    position: relative;
+    p{
+        margin-top: 30px;
+    }
+}
+/* stock analysis of company profile end */
+.company__top-header.sticky {
+    position: sticky;
+    top: 0;
+    background-color: #F6F8FE;
+    // padding: 0 100px;
+    z-index: 999;
+    left: 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0 ,0.3);
+    width: 100%;
+    .company__overview{
+        &-wrapper{
+            &-tablist{
+                margin-bottom: 0;
+            }
+        }
+    }
+    ul{
+        @media(max-width:400px){
+            flex-direction: row;
+            justify-content: center;
+        }
+    }
+}
+.company__overview{
+    &-wrapper{
+                    .company__overview-wrapper-content {
+                        .tab-pane {
+                            .content__grid-body {
+                                .overlay__valuaton {
+                                    position: absolute;
+                                    width: 100%;
+                                    height: 100%;
+                                    top: 0;
+                                    left: 0;
+                                    background: rgba(255, 255, 255, 0.1);
+                                    backdrop-filter: blur(3px);
+                                    z-index: 2;
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+            }
+            #button {
+                display: inline-block;
+                background-color: #4475F2;
+                border: 1px solid #4475F2;
+                width: 50px;
+                height: 50px;
+                text-align: center;
+                border-radius: 5px;
+                position: fixed;
+                bottom: 30px;
+                right: 20px;
+                transition: background-color .3s, opacity .5s, visibility .5s;
+                opacity: 0;
+                visibility: hidden;
+                z-index: 1000;
+                i{
+                    font-size: 30px;
+                    color: #fff;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                }
+                &:hover,&:active {
+                    cursor: pointer;
+                    background-color: #eef2ff;
+                    i{
+                        color: #4475F2;
+                    }
+                }
+            }
+            #button.show {
+                opacity: 1;
+                visibility: visible;
+            }
+            .ph-arrow-up{
+                vertical-align: middle;
+            }
+            table .company-list-item .blured-text {
+                filter: blur(4px);
+            }
+            
+            .valuation__table{
+                .turnover-section{
+                    position: relative;
+                    overflow-x: auto;
+                }
+            }
+            .blur__valuation{
+                p{
+                    margin-top: 10px;
+                    text-align: justify;
+                }
+            }
+            .page__overlay{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                background: rgba(255, 255, 255, 0.1);
+                backdrop-filter: blur(3px);
+                z-index: 1;
+            }
+            .offer__modal{
+                position: absolute;
+                top: 10%;
+                left: 50%;
+                transform: translateX(-50%);
+                background: white;
+                z-index: 55;
+                padding: 3rem;
+                width: 100%;
+                max-width: 60%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                grid-gap: 0.5rem;
+                &.valuation__table-modal{
+                    left: auto;
+                    max-width: 550px;
+                    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+                    right:10%;
+                    top: 25%;
+                    transform: none;
+                    @media (max-width:767px){
+                        max-width: 80%;
+                    }
+                }
+                
+                @media (max-width: 1536px){
+                    max-width: 80%;
+                }
+                
+                @media (max-width: 768px){
+                    max-width: 95%;
+                    padding: 2rem;
+                }
+                
+                @media (max-width: 600px){
+                    top: 5%;
+                }
+                
+                @media (max-width: 550px){
+                    padding: 2rem 1rem;
+                }
+                
+                @media (max-width: 500px){
+                    top: 1%;
+                }
+                
+                .modal__logo{
+                    width: 100%;
+                    max-width: 250px;
+                    
+                    @media (max-width: 450px){
+                        max-width: 200px;
+                    }
+                    
+                    img{
+                        width: 100%;
+                    }
+                }
+                
+                .offer__banner{
+                    width: 100%;
+                    background: $light-blue;
+                    padding: 2rem;
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    grid-gap: 1rem;
+                    
+                    @media (max-width: 550px){
+                        padding: 2rem 1rem;
+                    }
+                    
+                    .special__offer{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        min-width: 220px;
+                        height: 40px;
+                        background: #3256B4;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        
+                        &::before{
+                            content: '';
+                            position: absolute;
+                            right: -.1rem;
+                            width: 0;
+                            height: 0;
+                            border-style: solid;
+                            border-width: 20px 20px 20px 0;
+                            border-color: transparent $light-blue transparent transparent;
+                            
+                        }
+                        
+                        span{
+                            color: #fff;
+                            text-transform: capitalize;
+                            letter-spacing: .5px;
+                            font-weight: 500;
+                            font-size: 22px;
+                            margin-bottom: 4px;
+                        }
+                    }
+                    
+                    .subscription-title{
+                        margin-top: 2rem;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        text-align: center;
+                        color: $purple-color;
+                        font-weight: 600;
+                        letter-spacing: .5px;
+                        font-size: 18px;
+                        margin-bottom: 0;
+                        line-height: 25px;
+                        text-transform: capitalize;
+                        
+                        span{
+                            color: $text-color;
+                            font-weight: 500;
+                        }
+                    }
+                    
+                    .des{
+                        text-align: center;
+                        margin: 0;
+                        color: $text-color;
+                        text-transform: capitalize;
+                        font-size: 14px;
+                        font-weight: 400;
+                        letter-spacing: .5px;
+                    }
+                    
+                    .modal__cta{
+                        display: flex;
+                        align-items: center;
+                        grid-gap: 1rem;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        
+                        .btn__login{
+                            min-width: 166px;
+                            border: 1px solid $purple-color;
+                            height: 45px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50px;
+                            transition: all 300ms ease-in-out;
+                            
+                            @media (max-width: 550px){
+                                min-width: 100%;
+                            }
+                            
+                            &:hover{
+                                background-color: $purple-color;
+                                
+                                span{
+                                    animation: btnTransform .5s ease-in-out;
+                                    color: #fff;
+                                }
+                            }
+                            
+                            span{
+                                text-transform: capitalize;
+                                font-size: 16px;
+                                color: $purple-color;
+                                letter-spacing: 1px;
+                                transition: all 300ms ease-in-out;
+                                margin: 0;
+                            }
+                        }
+                        
+                        .btn__subscribe{
+                            min-width: 166px;
+                            background: $purple-color;
+                            height: 45px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50px;
+                            transition: all 300ms ease-in-out;
+                            
+                            @media (max-width: 550px){
+                                min-width: 100%;
+                            }
+                            
+                            &:hover{
+                                background-color: $secondary-blue;
+                                
+                                span{
+                                    animation: btnTransform .5s ease-in-out;
+                                }
+                            }
+                            
+                            span{
+                                text-transform: capitalize;
+                                font-size: 16px;
+                                color: #F6F8FE ;
+                                letter-spacing: 1px;
+                                transition: all 300ms ease-in-out;
+                                font-weight: 400;
+                                display: inline-block;
+                                margin:0
+                            }
+                        }
+                    }
+                }
+            }
+            .valuation__relative{
+                font-size: 24px;
+                font-weight: 400;
+            }
+            .news__list-wrapper-news-content {
+                .tab-pane {
+                    .content-wrapper.research-content {
+                        display: block;
+                        .research__wrap {
+                            .col-sm-4{
+                                padding-right: 0;
+                            }
+                            img{
+                                @media(max-width: 1810px){
+                                    width: 96%;
+                                    
+                                }
+                                @media(max-width: 1748px){
+                                    width: 99%;
+                                    
+                                }
+                            }
+                            .col-sm-8{
+                                padding-left: 0;
+                            }
+                            .research__text {
+                                margin: 0 0 20px -5px;
+                                background-color: #fff;
+                                padding: 24px 0 18px 10px;
+                                h2 {
+                                    font-size: 16px;
+                                    font-weight: 500;
+                                    color: #4F4F4F;
+                                    font-family: 'Rubik', sans-serif;
+                                    line-height: 23px;
+                                    margin-bottom: 7px;
+                                    @media(max-width: 1810px){
+                                        font-size: 14px;
+                                        
+                                    }
+                                    
+                                }
+                                p{
+                                    font-size: 14px;
+                                    font-weight: 300;
+                                    color: #4F4F4F;
+                                    font-family: 'Rubik', sans-serif;
+                                    @media(max-width: 1810px){
+                                        font-size: 12px;
+                                        
+                                    }
+                                }
+                                
+                            }
+                        }
+                    }
+                }
+            }
+            .main__sticky{
+                position: fixed;
+                z-index: 100;
+                top: 50%;
+                left: 10px;
+                a{
+                    background-color: #009900;
+                    height: 40px;
+                    width: 40px;
+                    border-radius: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 10px;
+                    i{
+                        
+                        color: #fff; 
+                        
+                    }
+                    
+                }
+                .blue{
+                    background-color: #4475F2;
+                }
+                .red{
+                    background-color:#FE5E5E ;
+                }
+                .green{
+                    background-color: #009900;
+                }
+                .grey{
+                    background-color: #8C8C8C;
+                }
+               .circle-two{
+                   position: relative;
+                   .dark-blue{
+                       background-color: #3b5998;
+                   }
+                .media__sticky{
+                    display: none;
+                    position: absolute;
+                    top: 0;
+                    left: 53px;
+                    &.show{
+                        display: block;
+                    }
+                }
+
+               }
+               
+            }
+            .company__list-wrapper-content-list {
+                table {
+                    .expense__wrap,.maturity__wrap{
+                        white-space: nowrap;
+                }
+            }
+            }
+            /* Media Query Starts here */
+            @media screen and (max-width: 1635px){
+                .news__investor-wrapper {
+                    .investor__section-card {
+                        padding: 20px;
+                    }
+                }
+                
+            }
+            @media screen and (max-width: 1280px){
+                .market__valuation-wrapper{
+                    .valuation {
+                        margin-top: 0;
+                        
+                    }
+                    .valuation-table{
+                        overflow-x: auto;
+                    }
+                } 
+            }
+            @media screen and (max-width: 1033px){
+                body.overflow{
+                    overflow: auto;
+                }
+            }
+            @media screen and (max-width: 1024px){
+                body.overflow{
+                    overflow: auto;
+                }
+                .main__header-top-wrapper {
+                    .cta__wrapper{
+                        .search-input.active{
+                            position: relative;
+                            transform: none;
+                        }
+                    }
+                } 
+            }
+            @media screen and (max-width: 575px){
+                .news__view-wrapper-content-wrapper {
+                    text-align: center;
+                    img{
+                        float: none;
+                        padding: 0 0 16px 0;
+                        width: 100%;
+                    }
+                }
+            }
+            /* Media Query of Search button*/
+            @media screen and (max-width: 479px){
+                .main__header-top-wrapper {
+                    .cta__wrapper{
+                        .search-input.active{
+                            input{
+                                width: 180px;
+                                padding: 0 10px;
+                                font-size: 12px;
+                            }
+                            .btn__search{
+                                padding-right: 10px;
+                            }
+                        }
+                    }
+                } 
+            }
+            
+            /* Media Query of Search button*/
+            @media screen and (max-width: 320px){
+                .main__header-top-wrapper {
+                    .cta__wrapper{
+                        .search-input.active{
+                            input{
+                                width: 140px;
+                            }
+                        }
+                    }
+                } 
+            }
+            
+            
+            // Countdown
+            .countdown {
+                
+                
+                .bloc-time {
+                    float: left;    
+                    margin-right: 15px;    
+                    text-align: center;    
+                    
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+                
+                .count-title {
+                    display: block;
+                    margin-bottom: 5px;
+                    font-size: 11px;
+                    color: #4f4f4f;
+                    text-transform: uppercase;
+                }
+                
+                .figure {
+                    position: relative;
+                    float: left;
+                    height: 24px;
+                    width: 24px;
+                    margin-right: 10px;
+                    background-color: #fff;
+                    box-shadow:(0 3px 4px 0 rgba(0, 0, 0, .2),inset 2px 4px 0 0 rgba(255, 255, 255, .08));
+                    
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                    
+                    >span {
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        margin: auto;
+                        font-size: 16px;
+                        color: #009900;
+                    }
+                    
+                    .top, .bottom-back {    
+                        &:after {
+                            content: "";
+                            position: absolute;
+                            z-index: -1;
+                            left: 0;
+                            bottom: 0;
+                            width: 100%;
+                            height: 100%;
+                            border-bottom: 1px solid rgba(0, 0, 0, .1);
+                        }
+                    }
+                    
+                    .top {
+                        z-index: 3;
+                        background-color: #f7f7f7;
+                        transform-origin: 50% 100%;
+                        -webkit-transform-origin: 50% 100%; 
+                        border-top-left-radius: 10px;
+                        border-top-right-radius: 10px;
+                        transform:perspective(200px);
+                    }
+                    
+                    .bottom {  
+                        z-index: 1;
+                        
+                        &:before {
+                            content: "";
+                            position: absolute;
+                            display: block; 
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 50%;
+                            background-color: rgba(0, 0, 0, .02);
+                        }
+                    }
+                    
+                    .bottom-back {
+                        z-index: 2;
+                        top: 0;
+                        height: 50%;
+                        overflow: hidden;    
+                        background-color: #f7f7f7;
+                        border-top-left-radius: 10px;
+                        border-top-right-radius: 10px;
+                        
+                        span {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            margin: auto;
+                        }
+                    }
+                    
+                    .top, .top-back {
+                        height: 50%;
+                        overflow: hidden;
+                        backface-visibility:hidden;
+                    }
+                    
+                    .top-back {
+                        z-index: 4;
+                        bottom: 0;
+                        background-color: #fff;
+                        -webkit-transform-origin: 50% 0;
+                        transform-origin: 50% 0;
+                        transform:(perspective(200px) rotateX(180deg));
+                        border-bottom-left-radius: 10px;
+                        border-bottom-right-radius: 10px;
+                        
+                        span {
+                            position: absolute;
+                            top: -100%;
+                            left: 0;
+                            right: 0;
+                            margin: auto;
+                        }
+                    }
+                }
+            }
+            

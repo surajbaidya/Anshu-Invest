@@ -1,0 +1,86 @@
+.company__list-wrapper-content-header.shareprice__content{
+    display: block;    
+}
+.shareprice__table{
+    background-color: #fff;
+    padding: 38px 48px;
+    @media(max-width:767px){
+        padding: 30px;
+    }
+    @media(max-width:479px){
+        padding: 30px 15px;
+    }
+    .company__list-wrapper-content-header{
+        margin-bottom: 20px;
+            .list__filter{
+               flex-wrap: wrap;
+            }
+    }
+    input[type="date"]::-webkit-inner-spin-button,
+    input[type="date"]::-webkit-calendar-picker-indicator {
+        display: none;
+        -webkit-appearance: none;
+    }
+    &.company__list-wrapper-content-list{
+        .share__price-table{
+            border: 1px solid #E0E0E0;
+            overflow-x: auto;
+            table{
+                tr{
+                   border: none;
+                   td,th{
+                    border-bottom: 1px solid #E0E0E0;
+                   }
+                }
+            } 
+        }
+         
+    }
+    th {
+        white-space: nowrap;
+        padding: 15px 45px;
+        a.sort-by {
+            padding-right: 18px;
+            position: relative;
+            color: #828282;
+        }
+    }
+    a.sort-by {
+        &:before {
+            border: 4px solid transparent;
+            content: "";
+            display: block;
+            height: 0;
+            right: 5px;
+            top: 50%;
+            position: absolute;
+            width: 0;
+            border-bottom-color: #C4C4C4;
+            margin-top: -9px;
+        }
+        &:after {
+            border: 4px solid transparent;
+            content: "";
+            display: block;
+            height: 0;
+            right: 5px;
+            top: 50%;
+            position: absolute;
+            width: 0;
+            border-top-color: #C4C4C4;
+            margin-top: 1px;
+        }
+    }
+    
+}
+@media only screen and (max-width: 375px){
+    .company__list-wrapper-content-header {
+        display: block;
+        .list__filter {
+            .search-box {
+                min-width: 100%;
+            }
+        }
+    }
+    
+}

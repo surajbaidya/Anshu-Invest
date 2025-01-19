@@ -1,0 +1,1212 @@
+.main__content {
+    .tool__button {
+        padding-bottom: 80px;
+        @media screen and (max-width: 479px){
+            padding-top: 35px;
+        }
+        .graph__chart {
+            .news__list-wrapper-news-header-tablist {
+                margin-bottom: 30px;
+                .nav-tabs {
+                    @media screen and (max-width: 479px){
+                        justify-content: center;
+                    }
+                    .nav-item {
+                        margin-top: 0;
+                        .nav-link {
+                            padding: 0.55rem 2rem;
+                            @media screen and (max-width: 479px){
+                                padding: 0.45rem 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.holding__piechart {
+    .content__chart {
+        background-color: #fff;
+        padding: 40px 34px 40px 34px;
+        margin-top: 25px ;
+        grid-gap: 3px;
+        &.company__list-wrapper-content-header {
+            .list__filter{
+                @media screen and (max-width: 479px){
+                    justify-content: center;
+                }
+                &.peers__filter{
+                    margin-bottom: 30px;
+                }
+            }
+        }
+        .nav__fund{
+            background-color: #EFF3F9;
+            
+        }
+    }
+}
+.main__content-risk{
+    background-color: #F8FAFF;
+    padding-top: 50px;
+    .risk__title{
+        h3{
+            font-size: 24px;
+            font-weight: 500;
+            font-family: 'Rubik', sans-serif;
+            color: #4F4F4F;
+        }
+        margin-bottom: 30px;
+    }
+    .main__risk{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        
+        .risk__category{
+            grid-column: span 1;
+            padding-top: 5px ;
+            background: #fff;
+            margin: 0 0 48px 0;
+            .catagory__wrap{
+                padding: 38px 0 0 56px;
+                width: 100%;
+                h4{
+                    font-size: 18px;
+                    font-weight: 400;
+                    font-family: 'Rubik', sans-serif;
+                    color: #4F4F4F;
+                    margin-bottom: 38px;
+                }
+                .catagory__risk{
+                    margin-top: 50px;
+                    .catagory__box-wrap{
+                        position: relative;
+                        .catagory__box{
+                            &:nth-child(2){
+                                background-color:#27AE60;
+                            }
+                            
+                            
+                        }
+                        
+                        
+                        &.box__grey{
+                            background:#FBFBFB ;
+                            a {
+                                font-size:25px;
+                                color: #0bd;
+                                text-decoration: none;
+                            }
+                            .tooltip {
+                                display: inline;
+                                position: relative;
+                            }
+                            .tooltip:hover:after{
+                                display: flex;
+                                -webkit-justify-content: center;
+                                justify-content: center;
+                                background: #444;
+                                border-radius: 8px;
+                                color: #fff;
+                                content: attr(title);
+                                margin: -82px auto 0;
+                                font-size: 16px;
+                                padding: 13px;
+                                width: 220px;
+                            }
+                            .tooltip:hover:before{
+                                border: solid;
+                                border-color: #444 transparent;
+                                border-width: 12px 6px 0 6px;
+                                content: "";
+                                left: 45%;
+                                bottom: 30px;
+                                position: absolute;
+                            }
+                        }
+                    }
+                }
+                .catagory__main-wrap{
+                    padding-bottom: 21px;
+                    .catagory__box-wrap{
+                        display: flex;
+                        align-items: center;
+                        .catagory__box{
+                            height: 30px;
+                            width: 82px;
+                            border: 1px solid #E0E0E0;
+                            background-color: #FBFBFB;
+                            margin-right: 3px;
+                            &.green-box{
+                                background-color: #27AE60;
+                            }
+                            &.red-box{
+                                background-color: #E15252;
+                            }
+                            &.catagory__element{
+                                
+                                padding: 15px;
+                                position: relative;
+                                .catagory__tooltip{
+                                    font-size: 10px;
+                                    position: absolute;
+                                    background-color: #fff;
+                                    border: 1px solid #BDBDBD;
+                                    color: #828282;
+                                    padding: 5px 10px;
+                                    box-shadow: 0 5px 10px -5px #060606;
+                                    bottom: calc(100% + 12px);
+                                    left: 50%;
+                                    transform: translateX(-50%) scale(1);
+                                    transform-origin: bottom;
+                                    transition: transform .3s;
+                                    width: 100px;
+                                    text-align: center;
+                                    &::after{
+                                        content: '';
+                                        position: absolute;
+                                        width: 10px;
+                                        aspect-ratio: 1;
+                                        background-color: #fff;
+                                        // border: 1px solid #BDBDBD;
+                                        bottom: -5px;
+                                        left: 50%;
+                                        transform: translateX(-50%) rotate(45deg);
+                                    }
+                                }
+                            }
+                        }
+                        .box__grey{
+                            background-color: #FBFBFB!important;
+                        }
+                    }
+                    .catagory__low-wrap{
+                        display: flex;
+                        text-align: center;
+                        justify-content: space-between;
+                        padding: 6px 67px 0 0;
+                        span{
+                            font-size: 16px;
+                            font-weight: 400;
+                            font-family: 'Rubik', sans-serif;
+                            color: #4F4F4F;
+                        }
+                        
+                    }
+                }
+            }
+        }
+        .risk__measures{
+            grid-column: span 2;
+            padding: 0 0 50px 50px;
+        }
+    }
+}
+
+.risk__measures{
+    .company__overview-wrapper-content {
+        &.overview__table{
+            background-color: #fff;
+            padding: 40px; 
+        }
+        .tab-pane {
+            .balance__sheet{
+                background-color: #fff;
+                padding: 0;
+                .balance__sheet-wrapper-content {
+                    &.text__grey{
+                        .tab-pane{
+                            .sheet__wrapper {
+                                display: block;
+                                
+                            }
+                            .sheet__wrapper-table {
+                                margin-bottom: 20px;
+                                height: auto;
+                                &:last-child{
+                                    margin-bottom: 0;
+                                }
+                                
+                                table{
+                                    thead{
+                                        tr{
+                                            td{
+                                                &:first-child{
+                                                    color: #4f4f4f;
+                                                    
+                                                }
+                                                
+                                            }
+                                        }
+                                    }
+                                    tr{
+                                        td{
+                                            color: #828282;
+                                            border: 0;
+                                            padding: 1rem 3rem;
+                                            &:first-child{
+                                                background-color: #fff;
+                                                padding: 1rem 0;
+                                            }
+                                            &:not(:first-child) {
+                                                border: 1px solid #F2F2F2;
+                                                border-right: 0;
+                                                border-left: 0;
+                                            }
+                                            &:first-child, &:last-child{
+                                                border-right: 1px solid #F2F2F2;
+                                            }
+                                            
+                                        }
+                                    }
+                                }
+                            } 
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+.mutual-fund-portfolio__chart {
+    .chart__sector {
+        .tabs-left.chart__boarder {
+            li{
+                &:last-child{
+                    border-bottom: none;
+                    
+                }
+                &:first-child{
+                    padding-top: 0;
+                }
+                a{
+                    &:hover{
+                        .mutual__chart-number{
+                            background-color:#F8FAFF;
+                        }
+                    }
+                }
+            }
+        }
+      
+    }
+}
+.mutual-fund-portfolio__chart{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
+    @media(max-width:1266px){
+        display: block;
+    }
+    .chart__asset{
+        grid-column: span 1;
+        background-color: #fff;
+        padding:40px 36px 36px 36px;
+        .chart__title{
+            h2{
+                font-size: 24px;
+                font-weight: 500;
+                font-family: 'Rubik', sans-serif;
+                color: #4F4F4F;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+        }
+        .sector__chart-content{
+            .mutual__chart-box{
+                table{
+                    width: 100%;
+                    .mutual__chart-number{
+                        th{
+                            font-size: 16px;
+                            font-weight: 500;
+                        } 
+                        display: grid;
+                        padding: 0!important;
+                        grid-template-columns: 1fr 100px;
+                        grid-gap: 0;
+                        @media(max-width:1600px){
+                            grid-template-columns: 1fr 80px;
+                        }
+                        td{
+                            padding: 10px;
+                            @media(max-width:400px){
+                               padding: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        
+    }
+    .Chart__equity{
+        text-align: center;
+        position: relative;
+        &:before{
+            content: '';
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            background-color: #fff;
+            width: 100%;
+            height: 20px;
+            z-index: 9;
+        }
+        &.sector__allocation{
+            &:before{
+                background-color: #F8FAFF;
+            }
+        }
+        
+    }
+    .chart__sector{
+        grid-column: span 2;
+        
+    }
+    .mutual__chart-box{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 8px;
+        .mutual__chart-number{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #F8FAFF;
+            border: 1px solid #E0E0E0;
+            width: 100%;
+            border-right: none;
+            table{
+                width: 100%;
+                border-collapse: separate;
+                border-spacing: 0 10px;
+            }
+            
+            .equity__color{
+                display: flex;
+                align-items: center;
+                span{
+                    height: 20px;
+                    width: 20px;
+                    border-radius: 5px;
+                    display: inline-block;
+                    margin-right: 14px;
+                }
+                h5{
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: #4F4F4F;
+                    font-family: 'Rubik', sans-serif;
+                    @media(min-width:1266px) and (max-width:1366px){
+                        font-size: 14px;
+                    }
+                    @media(max-width:375px){
+                        font-size: 14px;
+                    }
+                }
+            }
+            .equity__amount{
+                .amount__weight{
+                    text-transform: capitalize;
+                    margin-right: 7px;
+                }
+                .amount__percentage{
+                    font-weight: bold;
+                }
+            }
+            .equity__number{
+                font-size: 16px;
+                font-family: 'Rubik', sans-serif;
+                font-weight: 500;
+                @media(min-width:1266px) and (max-width:1366px){
+                    font-size: 14px;
+                }
+                @media(max-width:375px){
+                    font-size: 14px;
+                }
+                .chart__weight{
+                    font-weight: 400;
+                    text-transform: capitalize;
+                    margin-right: 7px;
+                }
+            }
+            .commercial__weight{
+                margin-right: 10px;
+            }
+            @media(max-width:375px){
+                padding: 13px 10px;
+            }
+        }
+        .mutual__view{
+            padding: 15px 20px;
+            background-color: #F8FAFF;
+            border: 1px solid #E0E0E0;
+            a{
+                white-space: nowrap;
+                font-size: 14px;
+                font-weight: 400;
+                color: #4F4F4F;
+                display: flex;
+                align-items: center;
+                i{
+                    margin-right: 6px;
+                }
+            }
+            @media(max-width:375px){
+                padding: 15px 10px;
+            }
+        }
+    }
+    .chart__box-total{
+        border-right: 1px solid #E0E0E0;
+    }
+    @media(max-width:1400px){
+        grid-column: span 3!important;
+    }
+    @media(max-width:575px){
+        padding: 40px 10px 36px 10px;
+    }
+}
+.chart__boarder{
+    .mutual__chart-box{
+        margin-bottom: 0;
+        .mutual__chart-number{
+            background-color: #fff;
+            transition: 0.5s all ease-in-out;
+            &:hover{
+                background-color: #F8FAFF;
+            }
+            .equity__number{
+                span{
+                    font-weight: 400;
+                    color: #4F4F4F;
+                    font-size: 16px;
+                    @media(min-width:1266px) and (max-width:1366px){
+                        font-size: 14px;
+                    }
+                    @media(max-width:375px){
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+.chart__sector{
+    grid-column: span 2;
+    &.chart__asset{
+        @media(max-width:767px){
+            padding: 40px 17px 36px 8px;
+        }
+    }
+    .chart__sector-content{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        align-items: center;
+        background-color: #F8FAFF;
+        border: 1px solid #E0E0E0;
+        .chart__sector-chart{
+            grid-column: span 2;
+            text-align: center;
+            
+            img{
+                margin-bottom: 30px;
+                margin-left: 50px;
+                
+            }
+            .chart__level{
+                .chart__row-text{
+                    @media(max-width: 991px){
+                        display: block;
+                        white-space: nowrap;
+                        width: 100%;
+                        .chart__hydropower{
+                            span {
+                                padding: 0 13px 0 8px;
+                            }
+                        } 
+                    }
+                }
+            }
+            @media(max-width:767px){
+                margin-top: 30px;
+            }
+        }
+        .chart__sector-list{
+            .chart__asset{
+                padding: 0;
+            }
+        }
+        @media(max-width:767px){
+            display: block;
+            padding: 40px 17px 36px 17px
+        }
+    }
+    .sector__chart-content{
+        margin-top: 57px;
+        border: 1px solid #E0E0E0;
+        background-color: #F8FAFF;
+        .tabs-left {
+            flex-direction: column;
+            border-bottom: none;
+            padding: 0;
+            >li {
+                float: none;
+                margin: 0px;
+                .mutual__chart-box {
+                    .mutual__chart-number{
+                        padding: 10px 25px 10px 15px;
+                        border: none;
+                        grid-gap: 20px;
+                    }
+                }
+                &:last-child{
+                    .mutual__chart-number{
+                        padding-bottom: 12px;
+                    }
+                }
+            }
+            li{
+                    .mutual__chart-number{
+                        th{
+                            padding: 10px;
+                        }
+                        .equity__number{
+                            strong{
+                                font-weight: 500;
+                            }
+                        }
+                    }
+            }
+            
+        }
+        
+        
+        .tab-content{
+            .chart__sector-chart{
+                text-align: center;
+                img{
+                    margin: 60px 0 30px 0;
+                }
+            }
+        }
+    }
+}
+
+
+.supervisor__wrap.mutual-fund-portfolio__chart{
+    display: block;
+    padding: 50px 0  64px 0;
+    .profile-input{
+        margin-bottom: 0;
+        width: 250px;
+        border-color:#4475F2;
+        padding: 5px 10px 5px 15px;
+        outline: none;
+    }
+    .supervisor__form{
+        .company__list-wrapper-content-header {
+            .list__filter {
+                .select-dropdown {
+                    .dropdown-select {
+                        min-width: 255px;
+                    }
+                }
+            }
+        } 
+    }
+    .supervisor__table{
+        table{
+            width: 100%;
+        }
+        .portfolio__table{
+            border: 1px solid #e2e5e9;
+            overflow-x: auto;
+            table{
+                tr{
+                    &:last-child{
+                        th{
+                            border-bottom-color: transparent;  
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.supervisor__wrap.mutual-fund-portfolio__chart.holding__statement{
+    padding:0;
+    .chart__asset.asset__statement{
+        padding-top: 0;
+    }
+} 
+.section__screme{
+    background-color: #F8FAFF;
+    padding: 55px 0 63px 0;
+    .screme__detail{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-gap: 50px;
+        @media(max-width:767px){
+            display: block;
+        }
+        
+        .screme__fund{
+            grid-column: 1/3;
+            grid-row: 1/2;
+            background-color: #fff;
+            padding: 50px 57px 35px;
+            @media(max-width:991px){
+                padding:40px 30px;
+            }
+            @media(max-width:767px){
+                padding:20px;
+                grid-column: 1/5;
+                grid-row: 1/2;
+            }
+            .fund-rating__table{
+                width: 100%;
+                tr{
+                    margin-bottom: 5px;
+                    display: grid;
+                    grid-template-columns: repeat(3,1fr);
+                    @media(max-width:767px){
+                        grid-template-columns: repeat(2,1fr);
+                    }
+                    td{
+                        border: 1px solid #E0E0E0;
+                        background: #FBFDFF;
+                        padding: 12px 15px;
+                        color:#828282;
+                        white-space: pre-wrap;
+                        &:first-child{
+                            border-right: 0;
+                            
+                        }
+                        &:last-child{
+                            font-weight: 600;
+                            grid-column: span 2;
+                            color: #4f4f4f;
+                            @media(max-width:767px){
+                                grid-column: span 1;
+                            }
+                        }
+                    }
+                }
+            }
+            .details__wrap{
+                .table__manager{
+                    border: 1px solid #e2e2e2;
+                    overflow-x: auto;
+                    table{
+                        
+                        th{
+                            font-size: 14px;
+                        }
+                    }
+                }
+                
+                .detail__title{
+                    
+                    h4{
+                        font-size:24px;
+                        font-weight: 500;
+                        font-family: 'Rubik', sans-serif;
+                        color: #4F4F4F;
+                        display: inline-block;
+                        margin: 35px 0 20px 0;
+                    }
+                }
+            }
+            .manager__table-wrap{
+                table{
+                    border: 1px solid #e2e5e9;
+                }
+                
+            }
+            .portfolio__table table tr th, .portfolio__table table tr td{
+                border: none;
+                border-right:1px solid #E0E0E0;
+                border-bottom:1px solid #E0E0E0;
+                padding: 15px;
+            }
+            .portfolio__table {
+                border: 1px solid #E0E0E0;
+                overflow-x: auto;
+                margin-top: 0;
+                table {
+                    tr{
+                        td,th{
+                            &:last-child{
+                                border-right: 0;
+                            }
+                        }
+                        &:last-child{
+                            td{
+                                border-bottom: 0;
+                            }
+                        }
+                    }
+                }
+            } 
+        }
+        .screme__sponsor{
+            grid-column:3/5;
+            grid-row: 1/2;
+            
+            @media(max-width:767px){
+                grid-column: 1/5;
+                grid-row: 2/3;
+            }
+            
+        }
+        .screme__expense{
+            grid-column: 1/5;
+            grid-row: 2/3;
+            padding:42px;
+            border: none;
+            
+            .table__manager{
+                border: 1px solid #e0e0e0;
+                width: 100%;
+                @media(max-width:767px){
+                    width: 100%;
+                    overflow-x: auto;
+                }
+                table{
+                    @media(max-width:1500px){
+                        overflow-x: auto;
+                    }
+                    tr{
+                        th{
+                            padding: 14px;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.section__peers{
+    .main__peers-wrap{
+        .nav-tabs{
+            margin-bottom: 30px;
+        }
+    }
+    .peers__detail{
+        display: block;
+    }
+    .main__holding{
+        display: inline-block;
+        padding: 50px 40px;
+        background-color: #fff;
+    }
+}
+
+.color__green{
+    color:#009900;
+}
+
+/* CSS for mutal profile page */
+.company__overview-wrapper.mutual__profile{
+    height: auto;
+    .overview__grid{
+        display: block;
+        .overview__grid-graph{
+            grid-template-columns: 40% 57%;
+            grid-column-gap: 3%;
+            justify-content: center;
+            align-items: center;
+            &-chart{
+                .title{
+                    font-size: 24px;
+                }
+                .price__wrap{
+                    h5{
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: nowrap;
+                        grid-gap:12px;
+                    }
+                }
+            }
+            @media(max-width:1400px){
+                display: block;
+            }
+            
+            .overview__grid-graph-chart{
+                grid-column: 1/2;
+                grid-gap: 0.6rem;
+                .price__wrap{
+                    display: flex;
+                    align-items: center;
+                    margin: 26px 0 25px 0;
+                    h5{
+                        font-size: 16px;
+                        font-weight: 400;
+                        font-family: 'Rubik', sans-serif;
+                        color:#828282;
+                        margin-right: 50px;
+                        span{
+                            color: #4F4F4F;
+                            padding-right: 10px;
+                        }
+                    }
+                }
+            }
+            .overview__grid-graph-data{
+                // background-color: #fff;
+                grid-column: 2/3;
+                @media(max-width:1400px){
+                    margin-top: 30px;
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+    .company__overview-wrapper-content {
+        .tab-pane {
+            .overview__grid-graph-data {
+                .data-content {
+                    .tab-pane {
+                        .content-wrapper{
+                            @media(max-width:991px){
+                                margin-top: 0;
+                            }
+                            .content-card{
+                                grid-row-gap: 10px;
+                            }
+                            &.p__right {
+                                padding: 47px 53px;
+                                @media(max-width:479px){
+                                    padding: 30px 0;
+                                }
+                            }
+                            .content-card {
+                                .des {
+                                    color: #828282;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .statement__wrap.statement__finance{
+                h2{
+                    margin-top: 50px;
+                }
+            }
+            .statement__content{
+                padding: 40px;
+                margin: 30px 0;
+                background-color: #fff;
+                .balance__sheet,.income__statement,.cashflow__statement{
+                    background-color: #fff;
+                    padding: 0;
+                    .balance__sheet-wrapper-content,.income__statement-wrapper-content, .cashflow__statement-wrapper-content {
+                        .tab-pane {
+                            .sheet__wrapper-table {
+                                table {
+                                    thead {
+                                        tr {
+                                            td {
+                                                &:first-child {
+                                                    background-color: #fff;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    tbody {
+                                        tr {
+                                            td {
+                                                &:first-child {
+                                                    background-color: #fff;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+            }
+           &#statement-tab, &#detail-allocation-tab{
+                .statement__content{
+                    @media(max-width:991px){
+                        padding: 20px;
+                    }
+                    .holding__statement{
+                        h2{
+                            @media(max-width:991px){
+                                padding-top: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+            &#holding-tab{
+                .statement__content{
+                    @media(max-width:991px){
+                        padding: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .data__tables{
+        background-color: transparent;
+        border: 1px solid #4475F2;
+        padding: 40px 0 20px 0;
+        width: 88%;
+        margin: 70px auto;
+        @media(max-width:767px){
+            width: 100%;
+            margin: 30px 0;
+        }
+        &-wrapper{
+            display: block;
+        }
+    }
+}
+.company__overview-wrapper-tablist.mutual__tablist{
+    margin-bottom: 0!important;
+}
+.mutual__quote{
+    margin-top: 3rem;
+}
+
+
+
+.company__overview-wrapper-content {
+    .tab-pane {
+        .deventure__graph{
+            display:inline-block;
+        }
+    }
+}
+/* CSS for custom dropdown on mutual fund */
+.selectdropdownwrap {
+    position: relative;
+    width: 250px;
+    border: 1px solid $purple-color;
+    border-radius: 50px;
+    color: #828282;
+    font-size: 14px;
+    .selectBtn {
+        padding: 10px 20px;
+        border-radius: 3px;
+        width: 100%;
+        cursor: pointer;
+        position: relative;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        &:after {
+            content: "";
+            position: absolute;
+            top: 45%;
+            right: 15px;
+            width: 6px;
+            height: 6px;
+            -webkit-transform: translateY(-50%) rotate(45deg);
+            transform: translateY(-50%) rotate(45deg);
+            border-right: 2px solid #666;
+            border-bottom: 2px solid #666;
+            transition: 0.2s ease;
+        }
+    }
+    .selectBtn.toggle {
+        border-radius: 3px 3px 0 0;
+        &:after {
+            -webkit-transform: translateY(-50%) rotate(-135deg);
+            transform: translateY(-50%) rotate(-135deg);
+        }
+    }
+    .selectDropdown {
+        position: absolute;
+        top: 110%;
+        width: 100%;
+        border-radius: 10px;
+        overflow: hidden;
+        background: #fff;
+        border-top: 1px solid #eee;
+        z-index: 1;
+        -webkit-transform: scale(1, 0);
+        transform: scale(1, 0);
+        -webkit-transform-origin: top center;
+        transform-origin: top center;
+        visibility: hidden;
+        transition: 0.2s ease;
+        box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+        .option {
+            padding: 10px;
+            box-sizing: border-box;
+            cursor: pointer;
+            &:hover {
+                background: #f8f8f8;
+            }
+        }
+    }
+    .selectDropdown.toggle {
+        visibility: visible;
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1);
+    }
+}
+
+
+@media screen and (max-width: 1600px) and (min-width: 1266px){
+    .chart__level{
+        .chart__hydropower{
+            grid-gap: 10px;
+            h3{
+                display: flex;
+                flex-direction: column;
+                white-space: nowrap;
+                
+                span{
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 920px) and (min-width: 767px){
+    .chart__level{
+        .chart__hydropower{
+            grid-gap: 10px;
+            h3{
+                display: flex;
+                flex-direction: column;
+                white-space: nowrap;
+                
+                span{
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
+
+.asset__chart-list{
+    overflow-x: auto;
+    table{
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 0 10px;
+        th{
+            padding: 10px 0 10px 30px;
+            text-transform: capitalize;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        .mutual__chart-number{
+            background-color: #F8FAFF;
+            margin-bottom: 20px;
+        
+            td{
+                border-top: 1px solid #E0E0E0;
+                padding: 0 0 0 30px;
+                border-bottom: 1px solid #E0E0E0;
+                &:first-child{
+                    border-left: 1px solid #E0E0E0;
+                   
+                }
+                &:last-child{
+                    border-right: 1px solid #E0E0E0;
+                }
+                
+            }
+            
+            .equity__color{
+                display: flex;
+                align-items: center;
+                span{
+                    height: 20px;
+                    width: 20px;
+                    border-radius: 5px;
+                    display: inline-block;
+                    margin-right: 14px;
+                }
+                h5{
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: #4F4F4F;
+                    font-family: 'Rubik', sans-serif;
+                    @media(max-width:375px){
+                        font-size: 14px;
+                    }
+                }
+            }
+            .equity__amount{
+                @media(max-width:375px){
+                    font-size: 14px;
+                }
+                .amount__weight{
+                    text-transform: capitalize;
+                    margin-right: 7px;
+                    @media(max-width:375px){
+                        font-size: 14px;
+                    }
+                }
+                .amount__percentage{
+                    font-weight: 500;
+                    @media(max-width:375px){
+                        font-size: 14px;
+                    }
+                }
+            }
+            .equity__number{
+                font-size: 16px;
+                font-family: 'Rubik', sans-serif;
+                strong,.chart__percentage{
+                    font-weight: 500;
+                }
+                .chart__weight{
+                    font-weight: 400;
+                    text-transform: capitalize;
+                    margin-right: 7px;
+                }
+            }
+            .mutual__view{
+                padding: 15px 20px;
+                background-color: #F8FAFF;
+                border-left: 1px solid #E0E0E0;
+                text-align: center;
+                line-height: 0;
+                a{
+                    white-space: nowrap;
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #4F4F4F;
+                    i{
+                        margin-right: 6px;
+                    }
+                }
+                @media(max-width:375px){
+                    padding: 15px 10px;
+                }
+            }
+            @media(max-width:375px){
+                padding: 13px 10px;
+            }
+        }
+    }
+}
+
+
+

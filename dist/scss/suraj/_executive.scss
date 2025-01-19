@@ -1,0 +1,137 @@
+/* common css for button on executive tab of company profile page start */
+.btn{
+    padding: 6px 36px;
+    border-radius: 50px;
+    border: 1px solid #4475F2;
+}
+/* common css for button on executive tab of company profile page end */
+/* Executive tab section table design of company profile page  start*/
+.gainer-and-turnover.executive__table{
+    padding-bottom: 25px;
+    .row{
+        background-color: #F6F8FE;
+        .turnover-section {
+            overflow-x: auto;
+            table{
+                background-color: #fff;
+            }
+        }
+    }
+    
+   
+}
+/* Executive tab section table design of company profile page  end*/
+/* Executive tab section title of company profile page start */
+.executive__wrap{
+    background-color: #F6F8FE;
+    padding-bottom: 30px;
+    &.modal__button-wrap{
+        background-color: transparent;
+    }
+    .executive__text{
+        .text__wrap{
+            h2{
+               font-size: 24px; 
+               font-weight: 500;
+               font-family: 'Rubik', sans-serif;
+            }
+        }
+        .key__wrap{
+            margin-left: 20px;
+           a{
+            font-size: 14px;
+            font-weight: 400;
+            
+           } 
+        }
+        display: flex;
+        align-items: center;
+        .key__wrap{
+            .bod__button{
+                background-color:#4475F2;
+                color: #fff;
+               text-transform: uppercase;
+               border:1px solid #4475F2;
+               &:hover{
+                   background-color: #fff;
+                   color: #4475F2;
+               }
+            }
+            .key__button{
+                color: #828282;
+                margin-left: 7px;
+                &:hover{
+                    background-color:#4475F2;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    &.valuation__wrap{
+    ul{
+        border: 0;
+        li{
+            .btn{
+                border-radius: 50px;
+                background-color: transparent!important;
+                color: #4475F2!important;
+                border: 1px solid #4475F2!important;
+                &.active{
+                    background-color: #4475F2!important;
+                    color: #fff!important;
+                }
+            }
+        }
+    }
+}
+}
+
+.gainer-and-turnover.executive__table{
+    .row{
+        padding: 0;
+    }
+}
+/* Executive tab section title of company profile page end*/
+/* Media Query of Executive tab of company profile page start */
+@media screen and (max-width: 575px){
+ .ownership__wrap{
+    .executive__text{
+        display: block;
+        text-align: center;
+        .text__wrap{
+            margin-bottom: 20px;
+        }
+       }
+ }
+}
+/* Media Query of Executive tab of company profile page end */
+/* Media Query of Executive tab of company profile page start*/
+@media screen and (max-width: 479px){
+    .executive__wrap{
+        &.divident__wrap{
+            padding-bottom: 0;
+        }
+        .executive__text{
+         display: block;
+         text-align: center;
+         &.divident__text{
+             text-align: left;
+         }
+         .text__wrap{
+             margin-bottom: 20px;
+         }
+        }
+    }
+}
+/* Media Query of Executive tab of company profile page end */
+/* Media Query of Executive tab of company profile page start */
+@media screen and (max-width: 375px){
+    .ownership__wrap{
+        .executive__text{
+            .bod__button{
+                margin-bottom: 20px;
+            }
+           }
+     }
+   }
+   /* Media Query of Executive tab of company profile page End */
